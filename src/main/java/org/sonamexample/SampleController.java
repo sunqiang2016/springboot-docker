@@ -24,7 +24,6 @@ public class SampleController {
     private String home() {
         logger.info("home controller called");
         return "Hello World!";
-
     }
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
@@ -32,9 +31,7 @@ public class SampleController {
     private String hello() {
         logger.info("home controller called");
         return "hello!";
-
     }
-
 
     @RequestMapping(value = "/exception", method = RequestMethod.GET)
     @ResponseBody
