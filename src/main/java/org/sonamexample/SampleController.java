@@ -27,6 +27,15 @@ public class SampleController {
 
     }
 
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @ResponseBody
+    private String hello() {
+        logger.info("home controller called");
+        return "hello!";
+
+    }
+
+
     @RequestMapping(value = "/exception", method = RequestMethod.GET)
     @ResponseBody
     private String throwException() {
